@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>WW1 Стратегия</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Первая Мировая Война</h1>
+        <div class="country-info">
+            <h2 id="country-name">Германия</h2>
+            <p>Год: <span id="year">1914</span></p>
+            <p>Казна: <span id="money">1000</span> млн. $</p>
+            <p>Армия: <span id="army">100000</span> солдат</p>
+            <p>Промышленность: <span id="industry">50</span> заводов</p>
+        </div>
+        <div class="actions">
+            <button onclick="recruitArmy()">Нанять солдат (+10K)</button>
+            <button onclick="buildFactory()">Построить завод</button>
+            <button onclick="nextTurn()">Следующий год</button>
+        </div>
+        <div id="event-log"></div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
